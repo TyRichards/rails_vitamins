@@ -17,7 +17,7 @@
 		<meta name="description" content="<?php bloginfo('description'); ?>">
 		<meta name="author" content="Shelly Morgan">
 		<title><?php wp_title('|', true, 'right'); ?></title>		
-		<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.ico">
+		<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.png">
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">	
 
 		<?php wp_head(); ?>
