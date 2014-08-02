@@ -1,4 +1,4 @@
-Journal
+Rails Vitamins
 ==========
 
-This is a repo for a Paradox theme
+This is a nice little WP Theme for a rails tips/tricks blog.
