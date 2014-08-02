@@ -1,0 +1,1 @@
+<?php include('page-single-column.php'); ?>
