@@ -60,10 +60,14 @@
     //     padding-bottom: ($space-lg - 50);
     // }
 
-    .masthead {
-        padding-top: 18px;
-        padding-bottom: 63px;
+    .blog .masthead {
+        padding-top: 0;  
+        h1 { text-align: center; }
     }    
+
+    .single .masthead {
+        p { text-align: center; margin-bottom: 50px; margin-top: 0;}
+    }
 
     .br-visible { display: block!important; }
 

@@ -9,17 +9,16 @@
 <?php get_header(); ?>
 
 <section class="masthead">
-    <div class="background">&nbsp;</div>
     <div class="container">
-        <div class="row">            
-            <div class="col-md-4 col-md-offset-1 text-left">
+        <div class="row">  
+            <div class="col-md-6 col-md-push-6 text-right">
+                <p>Enjoy weekly Ruby on Rails tips & tricks. Happy Saturday.</p>
+            </div>                      
+            <div class="col-md-4 col-md-offset-1 col-md-pull-6 text-left">
                 <a href="<?php echo esc_url(home_url('/')); ?>">
                     <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-lg.png" alt="Rails Vitamins">          
                 </a>
-            </div>
-            <div class="col-md-6 text-right">
-                <p>Enjoy weekly Ruby on Rails tips & tricks. Happy Saturday.</p>
-            </div>                                         
+            </div>                                     
         </div>
     </div>
 </section>	
