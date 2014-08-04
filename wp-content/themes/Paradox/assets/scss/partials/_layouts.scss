@@ -19,8 +19,12 @@ body > header {
 // Masthead Section /////////////////////////////////////////////////////////////////
 
 .masthead {
-    padding-top: 65px;
+    padding-top: 0;
     padding-bottom: 0; // 135px
+}
+
+.blog .masthead {
+    padding-top: 65px;
 }
 
 // Body Content Section /////////////////////////////////////////////////////////////////
@@ -36,7 +40,7 @@ body > header {
 // Primary Content Section /////////////////////////////////////////////////////////////////
 
 .primary-content {
-    padding-top: $space-sm;
+    padding-top: $space-lg;
     padding-bottom: $space-lg;
 }
 

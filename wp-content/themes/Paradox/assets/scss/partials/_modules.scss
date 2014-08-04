@@ -157,6 +157,8 @@ header {
 .masthead {
     background-color: transparent;
     // border-bottom: 15px solid $brand-secondary;
+    color: $gray-lighter;
+    // p, .lead { color: $gray-lighter; }
     h1 { 
         color: #F5F2F2; 
         a { 

@@ -11,18 +11,28 @@
 <section class="masthead">
     <div class="background">&nbsp;</div>
     <div class="container">
-        <div class="row">
-            <div class="col-sm-8 col-sm-offset-2">
-                <h1 class="text-center"><?php the_title('') ?></h1>            
+        <div class="row">            
+            <div class="col-md-4 col-md-offset-1 text-left">
+                <a href="<?php echo esc_url(home_url('/')); ?>">
+                    <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-lg.png" alt="Rails Vitamins">          
+                </a>
             </div>
+            <div class="col-md-6 text-right">
+                <p>Enjoy weekly Ruby on Rails tips & tricks. Happy Saturday.</p>
+            </div>                                         
         </div>
     </div>
 </section>	
 
 <section class="primary-content">
-    <div class="container">    
+    <div class="container"> 
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <h1 class="text-center"><?php the_title('') ?></h1>            
+            </div>           
+        </div>       
         <div class="row">    
-            <div class="main-col col-md-8 col-md-offset-2 page-content">              
+            <div class="main-col col-md-6 col-md-offset-3 page-content">              
 				<?php 
 				while (have_posts()) {
 					the_post();
