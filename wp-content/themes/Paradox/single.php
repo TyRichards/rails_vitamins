@@ -12,7 +12,7 @@
     <div class="container">
         <div class="row">  
             <div class="col-md-6 col-md-push-6 text-right">
-                <p>Enjoy weekly Ruby on Rails tips & tricks. Happy Saturday.</p>
+                <p>Enjoy weekly Ruby on Rails tips & tricks.</p>
             </div>                      
             <div class="col-md-4 col-md-offset-1 col-md-pull-6 text-left">
                 <a href="<?php echo esc_url(home_url('/')); ?>">

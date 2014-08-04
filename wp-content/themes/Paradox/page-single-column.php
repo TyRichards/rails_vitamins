@@ -16,7 +16,7 @@ Template Name: Single Column
                 </a>
             </div>
             <div class="col-md-6 text-right">
-                <p>Enjoy weekly Ruby on Rails tips & tricks. Happy Saturday.</p>
+                <p>Enjoy weekly Ruby on Rails tips & tricks.</p>
             </div>                                         
         </div>
     </div>
