@@ -238,6 +238,15 @@ article.post:first-child {
     padding-top: 0;
 }
 
+.archive article.post:first-child {
+    h2.entry-title { display: block; }
+    border-top:  1px solid $gray;
+    margin-top: 80px;
+    padding-top: 60px;
+}
+
+
+
 article.post {
     padding-top: 50px;
     margin-top: 10px;
