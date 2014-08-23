@@ -46,6 +46,11 @@ Template Name: Rails Curve
 
                 } //endwhile;
                 ?>             
+                <div class="well well-lg text-center">
+                  <div class="row">
+                    <?php gravity_form(3, true, true, false, null, true, 50); ?>
+                  </div>
+                </div>                
             </article>  
         </div> <!-- .row -->             
     </div> <!-- .container -->
