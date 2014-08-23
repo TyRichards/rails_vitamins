@@ -15,7 +15,7 @@
                 <p>Enjoy weekly Ruby on Rails tips & tricks.</p>
             </div>                      
             <div class="col-md-4 col-md-offset-1 col-md-pull-6 text-left">
-                <a href="<?php echo esc_url(home_url('/')); ?>">
+                <a href="<?php echo esc_url(home_url()); ?>/railsvitamins">
                     <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-lg.png" alt="Rails Vitamins">          
                 </a>
             </div>                                     

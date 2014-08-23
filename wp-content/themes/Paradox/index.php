@@ -18,7 +18,7 @@ Template Name: Blog
                 <h1 class="h4"><br>Enjoy weekly Ruby on Rails tips & tricks.</h1>
             </div>            
             <div class="col-sm-7 col-md-6 col-md-pull-5 col-md-offset-1 text-left">
-                <a href="<?php echo esc_url(home_url('/')); ?>">
+                <a href="<?php echo esc_url(home_url()); ?>/railsvitamins">
                     <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-lg.png" alt="Rails Vitamins">          
                 </a>
             </div>
