@@ -1,10 +1,10 @@
 <?php
 /*
-Template Name: Single Column
+Template Name: Rails Curve
 */
 ?>
 
-<?php get_header(); ?>
+<?php get_header('drop'); ?>
 
 <section class="masthead">
     <div class="container">
@@ -13,16 +13,22 @@ Template Name: Single Column
                 <h1 class="h4"><br>Flatten the learning curve of <br>Ruby on Rails</h1>
             </div>  -->           
             <div class="col-md-8 col-md-offset-2 text-center">
-                <h1 class="text-center"><strong><?php the_title('') ?></strong></h1>            
+                <h1 class="h1-lg text-center"><?php the_title('') ?></h1>            
+                <hr>
+                <p class="subhead">A Ruby on Rails crash-course</p>
+                <h2>Speed up the learning curve for Ruby on Rails</p>
+                <!-- <a href="<?php // echo esc_url(home_url('/')); ?>">
+                    <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-lg.png" alt="Rails Vitamins">          
+                </a> -->
             </div>
         </div>
     </div>
-</section>    
+</section>  
 
 <section class="primary-content">
-    <div class="container">    
+    <div class="container">      
         <div class="row">    
-            <article class="main-col col-sm-6 col-sm-offset-3 page-content">                                
+            <article class="main-col col-sm-8 col-sm-offset-2 page-content">                                
                 <?php 
                 while (have_posts()) {
                   the_post();

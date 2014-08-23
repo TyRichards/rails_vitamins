@@ -6,12 +6,14 @@
 $gray-darker:           #161616; // lighten(#000, 13.5%); // #222
 $gray-dark:             lighten(#000, 20%);   // #333
 $gray:                  lighten(#000, 33.5%); // #555
-$gray-light:            lighten(#000, 60%);   // #999
+$gray-light:            lighten(#000, 80%);   // #999
 $gray-lighter:          #F5F2F2; // #eee
 
 // Color Conventions
 $brand-primary:         #C93C3C; // #4D6387; // #6AA7D0;
 $brand-primary-light:   #FD7A7A;
+$brand-primary-dark:    #ab2c2c;
+$brand-primary-darker:  #640202;
 $brand-secondary:       #630303; // #428bca;
 $brand-success:         #5cb85c;
 $brand-info:            #3498db; // #5bc0de;
@@ -23,7 +25,7 @@ $brand-dark:            #202020;
 $body-bg:               $brand-dark; //#ecf0f1;
 $header-bg-color:       $brand-dark;
 $footer-bg-color:       $brand-dark;
-$text-color:            #8D7F7F;
+$text-color:            #7A6E6E; // #8D7F7F;
 $link-color:            $brand-primary;
 $link-hover-color:      darken($link-color, 15%);
 
@@ -63,7 +65,7 @@ $headings-font-family:    $font-family-sans-serif; //"Domine", "proxima-nova", "
 $headings-font-weight:    $light;
 $headings-line-height:    1.1;
 $h1-color:                $brand-primary !important;
-$headings-color:          $brand-dark;
+$headings-color:          $brand-primary;// $brand-dark;
 
 //-- Iconography
 //
@@ -321,7 +323,7 @@ $dropdown-link-active-bg:        inherit;
 // Components /////////////////////////////////////////////////////////////////
 
 // // Basics of a navbar
-$navbar-height:                    70px;
+$navbar-height:                    50px;
 // $navbar-margin-bottom:             $line-height-computed;
 $navbar-border-radius:             0px;
 // $navbar-padding-horizontal:        floor(($grid-gutter-width / 2));
@@ -329,15 +331,15 @@ $navbar-border-radius:             0px;
 $navbar-collapse-max-height:       700px;
 
 // $navbar-default-color:             #777;
-$navbar-default-bg:                transparent; //darken($header-bg-color, 5%);
+$navbar-default-bg:                #ffffff;
 $navbar-default-border:            transparent; //darken($header-bg-color, 10%);
 
 // // Navbar links
-$navbar-default-link-color:                lighten($header-bg-color, 55%);
-$navbar-default-link-hover-color:          #ffffff;
-$navbar-default-link-open-color:           $navbar-default-link-hover-color;
+$navbar-default-link-color:                $brand-dark;
+$navbar-default-link-hover-color:          $brand-dark;
+$navbar-default-link-open-color:           $brand-primary;
 // $navbar-default-link-hover-bg:             transparent;
-// $navbar-default-link-active-color:         #ffffff;
+$navbar-default-link-active-color:         $brand-primary;
 $navbar-default-link-active-bg:            transparent;
 // $navbar-default-link-disabled-color:       #ccc;
 // $navbar-default-link-disabled-bg:          transparent;

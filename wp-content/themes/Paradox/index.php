@@ -4,17 +4,20 @@
  * 
  * @package bootstrap-basic
  */
+/*
+Template Name: Blog
+*/
 ?>
 
-<?php get_header(); ?>
+<?php get_header('drop'); ?>
 
-<section class="masthead">
+<section class="masthead masthead-lg">
     <div class="container">
         <div class="row">
-            <div class="col-md-5 col-md-push-7 text-left">
+            <div class="col-sm-5 col-md-push-7 text-left">
                 <h1 class="h4"><br>Enjoy weekly Ruby on Rails tips & tricks.</h1>
             </div>            
-            <div class="col-md-6 col-md-pull-5 col-md-offset-1 text-left">
+            <div class="col-sm-7 col-md-6 col-md-pull-5 col-md-offset-1 text-left">
                 <a href="<?php echo esc_url(home_url('/')); ?>">
                     <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-lg.png" alt="Rails Vitamins">          
                 </a>

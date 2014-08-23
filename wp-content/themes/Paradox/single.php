@@ -6,7 +6,7 @@
  */
 ?>
 
-<?php get_header(); ?>
+<?php get_header('drop'); ?>
 
 <section class="masthead">
     <div class="container">

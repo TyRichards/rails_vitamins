@@ -48,7 +48,7 @@ small, .small {
         margin-bottom: 0px;
         padding-left: 50px;
         margin-top: 35px;
-        li { margin-bottom: 15px; } 
+        li { margin-bottom: 0px; } 
     }
     .gform_wrapper {
         .gforms_fields, ul { padding-left: 0; }
@@ -83,9 +83,38 @@ iframe {
 // Header //////
 
 header {
-    position: relative;    
+    .corner-btn { 
+        z-index: 50;
+        position: absolute; 
+        top: 20px;
+        left: 20px;
+        button { 
+            padding: 0;
+            border: none;
+            background: none;
+            i { font-size: 22px; }
+        }        
+    }    
+    position: relative;     
+    .navbar { border: none; padding-top: 6px; }
+    .navbar-collapse {
+        .navbar-text { 
+            color: darken($gray-light, 10%);
+            font-style: italic; 
+            font-family: $font-family-serif;
+            font-size: 15px;           
+            margin-top: 11px;
+        }        
+        .navbar-nav {
+            .menu-item a { 
+                border-bottom: 6px solid transparent;                 
+                &:hover { border-bottom: 6px solid $gray-light; }
+            }
+            .current_page_item a { border-bottom: 6px solid $gray-light; }
+        }
+    }   
     .navbar-header {
-        float: none;
+        // float: none;
         .navbar-text { 
             float: none; 
             color: $brand-secondary; 
@@ -94,18 +123,22 @@ header {
                 &:hover { color: $brand-primary-light; }
             }
         }
-        .navbar-brand {
+        .navbar-brand {  
+            text-transform: uppercase;
+            font-weight: $bold;          
+            letter-spacing: 2px;
+            font-size: 29px;
             // padding-top: 15px;
-            position: absolute;
-            top: 11px;
-            width: 59px;
-            height: 48px;
-            left: 20px;
-            padding: 0;
-            img {
-                width: 59px;
-                height: auto;               
-            }
+            // position: absolute;
+            // top: 11px;
+            // width: 59px;
+            // height: 48px;
+            // left: 20px;
+            // padding: 0;
+            // img {
+            //     width: 59px;
+            //     height: auto;               
+            // }
         }
     }
 }
@@ -119,7 +152,7 @@ header {
 .fa-left { margin-right: 15px; }
 
 .subhead {
-    margin-top: -11px!important;
+    // margin-top: -11px!important;
     text-transform: uppercase;
     font-size: 0.85em;
     letter-spacing: 2px;
@@ -159,6 +192,15 @@ header {
     // border-bottom: 15px solid $brand-secondary;
     color: $gray-lighter;
     // p, .lead { color: $gray-lighter; }
+    .h1-lg {
+        font-size: 100px;
+        font-weight: 100; 
+        text-transform: uppercase; 
+        margin-bottom: 0;  
+    }
+    .subhead { color: $brand-primary-darker; margin: 20px 0; }
+    h1, h2, h3, h4, h5, h6 { color: #ffffff; }    
+    hr { border-top: 5px solid $brand-primary-dark; margin: 15px 0; }
     h1 { 
         color: #F5F2F2; 
         margin-bottom: 50px;
@@ -169,7 +211,23 @@ header {
     }
 }
 
+// Rails Curve //////////////////////////////////////////////
 
+body.page-template-page-railscurve-php {
+    .entry-content p:first-child {
+        margin-top: 0;        
+    }
+    .primary-content {
+        // h1, h2, h3, h4, h5, h6 { text-align: center; } 
+        h3 { font-size: 40px; }
+        h4 { font-size: 30px; }
+    }
+    .well {
+        h3 { margin-top: 0; }        
+    }
+}
+
+.well { margin-top: 25px; }
 
 // Blog Article //////////////////////////////////////////////////////////////
 
@@ -177,7 +235,15 @@ article.post:first-child {
     h2.entry-title { display: none; }
     border: none;
     margin-top: 0;
+    padding-top: 0;
 }
+
+article.post {
+    padding-top: 50px;
+    margin-top: 10px;
+}
+
+.primary-content .h1 { margin-top: 0; }
 
 article.post {
     border-top: 1px solid #bbbbbb;
@@ -187,8 +253,8 @@ article.post {
         font-style: normal;
         margin-bottom: 25px;
         a {
-            color: $brand-dark;        
-            &:hover { color: $brand-primary }
+            // color: $brand-dark;        
+            // &:hover { color: $brand-primary }
         }        
     }
     .entry-header { 
@@ -508,8 +574,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .lead {
-  font-size: $font-size-h6;
+  font-size: $font-size-h4;
   font-weight: $regular;
+  font-family: $font-family-serif;
+  font-style: italic;
 }
 
 // Sidebar /////////////////////////////////////////////////////////////////

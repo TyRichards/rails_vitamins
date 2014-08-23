@@ -50,32 +50,17 @@
 		
 		<?php do_action('before'); ?> 
 		<header>				
-			<section class="top-navbar">				
-				<nav class="navbar navbar-default" role="navigation">
-				  	<div class="container">				    	
-				    	<div class="navbar-header">
-					      	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">				        
-						        <span class="sr-only">Toggle navigation</span>
-						        <span class="icon-bar"></span>
-						        <span class="icon-bar"></span>
-						        <span class="icon-bar"></span>
-					      	</button>				      	
-							<a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>" 
-							   title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
-								<?php echo esc_attr(get_bloginfo('name', 'display')); ?>
-								<!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/images/symbol.png"> -->
-							</a>												      
-				    	</div>
-						<div class="collapse navbar-collapse navbar-primary-collapse">	
-							<p class="navbar-text"><?php bloginfo('description'); ?></p>					
-							<?php wp_nav_menu(array('theme_location' => 'primary', 
-													'container' => false, 
-													'menu_class' => 'nav navbar-nav navbar-right', 
-													'walker' => new BootstrapBasicMyWalkerNavMenu())); ?>
-						</div> <!--.navbar-collapse-->				    
-				 	</div><!-- /.container-fluid -->
-				</nav>				
-			</section> <!-- section-navbar -->
+			<div class="btn-group corner-btn">
+		      	<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+		        	<i class="fa fa-th-list" title="Posted in"></i>
+		      	</button>
+
+			    <?php wp_nav_menu(array('theme_location' => 'primary', 
+										'container' => false, 
+										'menu_class' => 'dropdown-menu', 
+										'walker' => new BootstrapBasicMyWalkerNavMenu())); ?>
+
+		    </div>    			
 		</header>					
 			
 		<div class="body-content">				

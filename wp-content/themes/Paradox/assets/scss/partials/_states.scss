@@ -60,10 +60,18 @@
     //     padding-bottom: ($space-lg - 50);
     // /}
 
+    .masthead .h1-lg { font-size: 70px; }
+
     .blog .masthead {
         padding-top: 0;  
         h1 { text-align: center; }
-    }    
+    }   
+
+    .blog header, .single header { padding-top: 75px; } 
+
+    .blog .masthead h1 {
+        font-size: 18px;
+    } 
 
     .single .masthead {
         p { text-align: center; margin-bottom: 50px; margin-top: 0;}

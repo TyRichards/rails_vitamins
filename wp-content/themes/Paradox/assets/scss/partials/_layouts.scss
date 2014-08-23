@@ -18,13 +18,22 @@ body > header {
 
 // Masthead Section /////////////////////////////////////////////////////////////////
 
-.masthead {
-    padding-top: 0;
+.blog .masthead {
+    padding-top: 135px;
     padding-bottom: 0; // 135px
 }
 
-.blog .masthead {
-    padding-top: 65px;
+.single .masthead {
+    padding-bottom: 0; // 135px    
+}
+
+.masthead {
+    padding-top: 75px;
+    padding-bottom: 50px; // 135px
+}
+
+.masthead-lg {
+    padding-top: 135px;
 }
 
 // Body Content Section /////////////////////////////////////////////////////////////////
