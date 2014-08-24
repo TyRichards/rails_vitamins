@@ -41,8 +41,24 @@
 		
 		<!--wordpress footer-->
 		<?php wp_footer(); ?> 
+		
 		<!-- Typekit -->
 		<script type="text/javascript" src="//use.typekit.net/jph8qdt.js"></script>
-		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>		
+		
+		<!-- Drip -->
+		<script type="text/javascript">
+		  var _dcq = _dcq || [];
+		  var _dcs = _dcs || {}; 
+		  _dcs.account = '1058351';
+		  
+		  (function() {
+		    var dc = document.createElement('script');
+		    dc.type = 'text/javascript'; dc.async = true; 
+		    dc.src = '//tag.getdrip.com/1058351.js';
+		    var s = document.getElementsByTagName('script')[0];
+		    s.parentNode.insertBefore(dc, s);
+		  })();
+		</script>		
 	</body>
 </html>
