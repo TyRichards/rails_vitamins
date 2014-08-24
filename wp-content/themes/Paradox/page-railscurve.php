@@ -45,12 +45,21 @@ Template Name: Rails Curve
                   echo "\n\n";
 
                 } //endwhile;
-                ?>             
+                ?>                    
+
                 <div class="well well-lg text-center">
                   <div class="row">
-                    <?php gravity_form(3, true, true, false, null, true, 50); ?>
+                    <?php gravity_form(4, true, true, false, null, true, 50); ?>                    
                   </div>
-                </div>                
+                </div>  
+
+                <h2 class="text-center">OR</h2>
+
+                <div class="well well-lg text-center">
+                  <div class="row">
+                    <?php gravity_form(3, true, true, false, null, true, 50); ?>                    
+                  </div>
+                </div>                                
             </article>  
         </div> <!-- .row -->             
     </div> <!-- .container -->
