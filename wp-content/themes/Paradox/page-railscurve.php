@@ -16,7 +16,7 @@ Template Name: Rails Curve
                 <h1 class="h1-lg text-center"><?php the_title('') ?></h1>            
                 <hr>
                 <p class="subhead">A Ruby on Rails crash-course</p>
-                <h2>Speed up the learning curve for Ruby on Rails</p>
+                <h2>Build a live Rails app start-to-finish in 30 days</p>
                 <!-- <a href="<?php // echo esc_url(home_url('/')); ?>">
                     <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-lg.png" alt="Rails Vitamins">          
                 </a> -->
