@@ -77,6 +77,9 @@
 		<span class="comments-button"><?php bootstrapBasicCommentsPopupLink(); ?></span>
 		<?php } //endif; ?>  
 
+		<div class="text-left"><?php echo do_shortcode( '[manual_related_posts]' ); ?></div>
+		<hr>
+
 		<?php } // End if 'post' == get_post_type() ?> 
 
 	</footer><!-- .entry-meta -->
