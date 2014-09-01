@@ -15,12 +15,12 @@ Template Name: Home
             <div class="col-md-8 col-md-offset-2 text-center">
                 <h1 class="h1-lg text-center"><?php echo esc_attr(get_bloginfo('name', 'display')); ?></h1>            
                 <hr>
-                <p class="subhead">Ruby on Rails Tools</p>
-                <h2>Learn by doing</p>
+                <h2 class="subhead">Ruby on Rails tools for those who <strong>learn by doing</strong></h2>                
                 <!-- <a href="<?php // echo esc_url(home_url('/')); ?>">
                     <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-lg.png" alt="Rails Vitamins">          
                 </a> -->
                 <a class="btn btn-lg btn-secondary" href="/railscurve">Rails Curve</a>
+                &nbsp;
                 <a class="btn btn-lg btn-secondary" href="/railsvitamins">Rails Vitamins</a>
             </div>
         </div>

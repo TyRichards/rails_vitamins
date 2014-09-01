@@ -154,7 +154,7 @@ header {
 .subhead {
     // margin-top: -11px!important;
     text-transform: uppercase;
-    font-size: 0.85em;
+    font-size: 20px;
     letter-spacing: 2px;
 }
 
@@ -186,6 +186,8 @@ header {
 }
 
 // Masthead //////////////////////////////////////////////////////////////////
+
+.home .masthead .h1-lg { text-transform: inherit; } 
 
 .masthead {
     background-color: transparent;
