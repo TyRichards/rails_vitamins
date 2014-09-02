@@ -60,12 +60,12 @@
 		</div>				
 		
 		<?php do_action('before'); ?> 
-		<header>				
+		<header>
 			<section class="top-navbar">				
 				<nav class="navbar navbar-default" role="navigation">
 				  	<div class="container-fluid">				    	
 				    	<div class="navbar-header">
-					      	<button type="button" class="navbar-toggle" data-toggle="collapse">				        
+					      	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-navbar-collapse">
 						        <span class="sr-only">Toggle navigation</span>
 						        <span class="icon-bar"></span>
 						        <span class="icon-bar"></span>
@@ -76,7 +76,7 @@
 								<img alt="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" src="<?php echo get_template_directory_uri(); ?>/assets/images/do_rails_logo_sm.png">
 							</a>												      
 				    	</div>
-						<div class="collapse navbar-collapse navbar-primary-collapse">							
+						<div class="collapse navbar-collapse" id="header-navbar-collapse">							
 							<?php wp_nav_menu(array('theme_location' => 'primary', 
 													'container' => false, 
 													'menu_class' => 'nav navbar-nav navbar-right', 

@@ -141,6 +141,24 @@
 
 // Small devices only (phones and tablets)
 @media (max-width: $screen-sm-max) {
+
+    header {
+        .navbar {             
+            padding-top: 0; 
+            .navbar-header {
+                position: relative;
+                .navbar-brand {
+                    position: absolute;
+                    bottom: 0;
+                    img {
+                        width: 239px;
+                        height: auto;
+                    }
+                }
+            }              
+        }      
+    }
+
     .logo-bg { background-size: 450px auto; }
     .home {
         .masthead { 
