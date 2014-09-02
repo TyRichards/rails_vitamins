@@ -1,7 +1,16 @@
 // Base Styles /////////////////////////////////////////////////////////////////
 
 body {
-    background: $brand-primary image-url('bg.png') repeat fixed top left;
+    font-weight: 500;
+}
+
+.navbar-default { background: image-url('bg.png') repeat fixed top left; }
+
+.masthead { background: $brand-primary image-url('bg.png') repeat fixed top left; }
+
+html {
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
 }
 
 a {
@@ -96,7 +105,7 @@ header {
         }        
     }    
     position: relative;     
-    .navbar { border: none; padding-top: 6px; }
+    .navbar { border: none; padding-top: 25px; }
     .navbar-collapse {
         .navbar-text { 
             color: darken($gray-light, 10%);
@@ -105,12 +114,13 @@ header {
             font-size: 15px;           
             margin-top: 11px;
         }        
-        .navbar-nav {
+        .navbar-nav {            
+            padding-top: 4px;            
             .menu-item a { 
-                border-bottom: 6px solid transparent;                 
-                &:hover { border-bottom: 6px solid $gray-light; }
+                // border-bottom: 6px solid transparent;                 
+                // &:hover { border-bottom: 6px solid $gray-light; }
             }
-            .current_page_item a { border-bottom: 6px solid $gray-light; }
+            // .current_page_item a { border-bottom: 6px solid $gray-light; }
         }
     }   
     .navbar-header {
@@ -128,6 +138,7 @@ header {
             font-weight: $bold;          
             letter-spacing: 2px;
             font-size: 29px;
+            padding-bottom: 0; 
             // padding-top: 15px;
             // position: absolute;
             // top: 11px;
@@ -153,14 +164,39 @@ header {
 
 .subhead {
     // margin-top: -11px!important;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     font-size: 20px;
-    letter-spacing: 2px;
+    // letter-spacing: 2px;
 }
 
 .container {
     position: relative;
     z-index: 2;
+}
+
+ul.nav-pills li a {
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600!important;
+    padding-top: 0;
+    padding-bottom: 0;
+    &:hover { background-color: $brand-primary-dark; }    
+}
+
+.home {
+    ul.nav-pills {
+        text-align: center;
+        padding-left: 0;
+        padding-top: 25px;
+        li {   
+            float:none;
+            display:inline-block;
+            *display:inline; /* ie7 fix */
+             zoom:1; /* hasLayout ie7 trigger */
+        }
+        li+li { margin-left: 10px; }        
+    }
 }
 
 // Body BG //////////////////////////////////////////////////////////////////
@@ -187,7 +223,17 @@ header {
 
 // Masthead //////////////////////////////////////////////////////////////////
 
-.home .masthead .h1-lg { text-transform: inherit; } 
+.page-title { font-size: 70px; }
+
+.logo-bg {
+    background: transparent image-url('do_rails_logo.png') top center no-repeat;
+    // background-size:100% auto;
+}
+
+.home .masthead {
+    padding-top: 150px;
+    .h1-lg { text-transform: inherit; padding-bottom: 20px; } 
+}
 
 .masthead {
     background-color: transparent;
@@ -200,7 +246,12 @@ header {
         text-transform: uppercase; 
         margin-bottom: 0;  
     }
-    .subhead { color: $brand-primary-darker; margin: 20px 0; }
+    .subhead { 
+        font-family: $font-family-serif;
+        font-style: italic;
+        color: $brand-primary-darker; 
+        margin: 20px 0;         
+    }
     h1, h2, h3, h4, h5, h6 { color: #ffffff; }    
     hr { border-top: 5px solid $brand-primary-dark; margin: 15px 0; }
     h1 { 
@@ -357,7 +408,9 @@ border-color: $btn-secondary-border;
 .navbar-btn.navbar-left { margin-right: 30px; }
 
 .nav > .menu-item > a {
-    font-weight: 500;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .navbar {
@@ -435,7 +488,7 @@ color: #ffffff!important;
 }
 
 .small-footer {
-    background: $navbar-default-bg;
+    background: transparent;
 
     a {
         display: block;
@@ -472,6 +525,7 @@ h1, h2, h3, h4, h5, h6 {
         margin-top: 45px;
         margin-bottom: 0px;
     }
+    h1 { margin-bottom: 30px; }
 }
 
 // Site Title
@@ -594,7 +648,7 @@ h1, h2, h3, h4, h5, h6 {
 // Sidebar /////////////////////////////////////////////////////////////////
 
 .primary-content {
-    background-color: $gray-lighter;
+    background-color: transparent;
     position: relative;
     .sidebar.background {
         display: block;       
@@ -690,7 +744,18 @@ h1, h2, h3, h4, h5, h6 {
 // Footer /////////////////////////////////////////////////////////////////
 
 .footer {
-    background-color: $footer-bg-color;
+    background-color: transparent;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-top: 1px solid darken($body-bg, 7%);
+    color: $text-color;
+    .btn { margin-bottom: 10px; }    
+    a { 
+        color: $brand-primary;               
+        &:hover {
+            color: $brand-primary-dark;
+        }
+    }
 }
 
 // Video Player /////////////////////////////////////////////////////////////////

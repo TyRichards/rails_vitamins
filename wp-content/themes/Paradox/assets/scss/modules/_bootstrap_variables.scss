@@ -22,7 +22,7 @@ $brand-danger:          #c0392b;
 $brand-dark:            #202020;
 
 // Scaffolding /////////////////////////////////////////////////////////////////
-$body-bg:               $brand-dark; //#ecf0f1;
+$body-bg:               $gray-lighter; //#ecf0f1;
 $header-bg-color:       $brand-dark;
 $footer-bg-color:       $brand-dark;
 $text-color:            #7A6E6E; // #8D7F7F;
@@ -35,14 +35,15 @@ $link-hover-color:      darken($link-color, 15%);
 // Font weights
 $light: 300;
 $regular: normal;
-$bold: 900;
+$bold: 700;
+
 
 // Font Families
-$font-family-sans-serif:    "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-sans-serif:    "proxima-nova-soft", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-family-serif:         Georgia, "Times New Roman", Times, serif;
-$font-family-monospace:     Menlo, Monaco, Consolas, "Courier New", monospace;
+$font-family-monospace:     "source-code-pro", Menlo, Monaco, Consolas, "Courier New", monospace;
 $font-family-base:          $font-family-sans-serif;
-$font-family-display:       'Sacramento', "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, cursive;
+$font-family-display:       "proxima-nova-soft", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, cursive;
 
 // Font Sizes
 $font-size-base:        18px;
@@ -77,8 +78,8 @@ $icon-font-svg-id:        "glyphicons_halflingsregular";
 
 // Components /////////////////////////////////////////////////////////////////
 
-$padding-base-vertical:     8px;
-$padding-base-horizontal:   30px;
+$padding-base-vertical:     4px;
+$padding-base-horizontal:   15px;
 
 $padding-large-vertical:    ($padding-base-vertical * 1.5);
 $padding-large-horizontal:  ($padding-base-horizontal * 1.4);
@@ -269,14 +270,14 @@ $dropdown-link-active-bg:        inherit;
 
 // // Medium screen / desktop
 // // Note: Deprecated $screen-md and $screen-desktop as of v3.0.1
-// $screen-md:                  992px;
-// $screen-md-min:              $screen-md;
+$screen-md:                  992px;
+$screen-md-min:              $screen-md;
 // $screen-desktop:             $screen-md-min;
 
 // // Large screen / wide desktop
 // // Note: Deprecated $screen-lg and $screen-lg-desktop as of v3.0.1
-// $screen-lg:                  1200px;
-// $screen-lg-min:              $screen-lg;
+$screen-lg:                  1200px;
+$screen-lg-min:              $screen-lg;
 // $screen-lg-desktop:          $screen-lg-min;
 
 // // So media queries don't overlap when required, provide a maximum
@@ -295,7 +296,7 @@ $dropdown-link-active-bg:        inherit;
 // $grid-gutter-width:         30px;
 // // Navbar collapse
 // //** Point at which the navbar becomes uncollapsed.
-// $grid-float-breakpoint:     $screen-sm-min;
+$grid-float-breakpoint:     $screen-md-min;
 // //** Point at which the navbar begins collapsing.
 // $grid-float-breakpoint-max: ($grid-float-breakpoint - 1);
 
@@ -323,7 +324,7 @@ $dropdown-link-active-bg:        inherit;
 // Components /////////////////////////////////////////////////////////////////
 
 // // Basics of a navbar
-$navbar-height:                    50px;
+$navbar-height:                    35px;
 // $navbar-margin-bottom:             $line-height-computed;
 $navbar-border-radius:             0px;
 // $navbar-padding-horizontal:        floor(($grid-gutter-width / 2));
@@ -331,16 +332,16 @@ $navbar-border-radius:             0px;
 $navbar-collapse-max-height:       700px;
 
 // $navbar-default-color:             #777;
-$navbar-default-bg:                #ffffff;
+$navbar-default-bg:                $brand-primary;
 $navbar-default-border:            transparent; //darken($header-bg-color, 10%);
 
 // // Navbar links
-$navbar-default-link-color:                $brand-dark;
-$navbar-default-link-hover-color:          $brand-dark;
-$navbar-default-link-open-color:           $brand-primary;
-// $navbar-default-link-hover-bg:             transparent;
-$navbar-default-link-active-color:         $brand-primary;
-$navbar-default-link-active-bg:            transparent;
+$navbar-default-link-color:                #ffffff;
+$navbar-default-link-hover-color:          #ffffff;
+$navbar-default-link-open-color:           #ffffff;
+$navbar-default-link-hover-bg:             $brand-primary-dark;
+$navbar-default-link-active-color:         #ffffff;
+$navbar-default-link-active-bg:            $brand-primary-dark;
 // $navbar-default-link-disabled-color:       #ccc;
 // $navbar-default-link-disabled-bg:          transparent;
 

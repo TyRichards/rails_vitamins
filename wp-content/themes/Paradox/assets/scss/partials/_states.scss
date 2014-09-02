@@ -115,7 +115,8 @@
 
         p, ul, ol {
             margin: $mobile-paragraph-top-margin;
-        }                
+        }  
+        .subhead { font-size: inherit; }              
     }
 
     .primary-content, .masthead, .logos, .footer {
@@ -136,9 +137,24 @@
     .no-float-xs {
         float: none!important;
     }
+}
 
-
-
+// Small devices only (phones and tablets)
+@media (max-width: $screen-sm-max) {
+    .logo-bg { background-size: 450px auto; }
+    .home {
+        .masthead { 
+            padding-top: 50px; 
+            .h1-lg { padding-bottom: 0px; }            
+            ul.nav-pills {
+                li {        
+                    display: block;
+                    a { padding-top: 0; padding-bottom: 0; font-size: 25px; }
+                }
+                li+li { margin-left: 0!important; }  
+            }
+        }
+    }
 }
 
 // Small devices only (tablets, 768px to 992px)

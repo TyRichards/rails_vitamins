@@ -6,21 +6,8 @@ Template Name: Single Column
 
 <?php get_header(); ?>
 
-<section class="masthead">
-    <div class="container">
-        <div class="row">
-<!--             <div class="col-xs-5 col-md-push-7 text-left">
-                <h1 class="h4"><br>Flatten the learning curve of <br>Ruby on Rails</h1>
-            </div>  -->           
-            <div class="col-md-8 col-md-offset-2 text-center">
-                <h1 class="text-center"><strong><?php the_title('') ?></strong></h1>            
-            </div>
-        </div>
-    </div>
-</section>    
-
 <section class="primary-content">
-    <div class="container">    
+    <div class="container">     
         <div class="row">    
             <article class="main-col col-sm-6 col-sm-offset-3 page-content">                                
                 <?php 
