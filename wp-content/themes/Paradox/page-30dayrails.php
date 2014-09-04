@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Rails Curve
+Template Name: 30-Day Rails
 */
 ?>
 
@@ -28,7 +28,7 @@ Template Name: Rails Curve
 <section class="primary-content">
     <div class="container">      
         <div class="row">    
-            <article class="main-col col-sm-8 col-sm-offset-2 page-content">                                
+            <article class="main-col col-sm-6 col-sm-offset-3 page-content">                                
                 <?php 
                 while (have_posts()) {
                   the_post();
