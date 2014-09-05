@@ -93,7 +93,7 @@
             </div>
         </div>      
         <div class="row">    
-            <div class="main-col col-md-6 col-md-offset-3 page-content"> 
+            <div class="main-col col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 page-content"> 
 				<?php if (have_posts()) { ?> 
 
 				

@@ -280,7 +280,13 @@ body.page-template-page-railscurve-php {
     }
 }
 
-.well { margin-top: 25px; }
+.well { 
+    margin-top: 25px; 
+    h1:first-child,
+    h2:first-child,
+    h3:first-child,
+    h4:first-child { margin-top: 0; }
+}
 
 // Blog Article //////////////////////////////////////////////////////////////
 

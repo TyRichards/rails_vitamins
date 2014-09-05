@@ -9,7 +9,7 @@ Template Name: Single Column
 <section class="primary-content">
     <div class="container">     
         <div class="row">    
-            <article class="main-col col-sm-6 col-sm-offset-3 page-content">                                
+            <article class="main-col col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 page-content">                                
                 <?php 
                 while (have_posts()) {
                   the_post();
