@@ -66,8 +66,7 @@ Template Name: 30-Day Rails
             <div class="col-md-8">
                 <div class="well well-lg" >
                     <div class="clearfix">
-                        <h2 class="text-center">Pre-order & pay what you want</h2>
-                        
+                        <h2 class="text-center">Pre-order & pay what you want</h2>                                                
                         <div class="row">     
                             <div class="col-md-8 col-md-offset-2">
                                 <?php gravity_form(4, false, true, false, null, true, 100); ?>   
@@ -78,7 +77,7 @@ Template Name: 30-Day Rails
                             <div class="col-md-6">
                                 <h3 class=""><i class="fa fa-question-circle"></i> How it works</h3>
                                 <div class="small">
-                                    <p>It's a no-nonsense deal, pick the amount you want to pay for the online course, anything between $10 to $1000, completely up to you. In return, you'll get access to the parts of the course as it's created, and the final version upon it’s completion.</p>
+                                    <p>It's a no-nonsense deal, pick the amount you want to pay for the online course, anything between $10 to $1000, completely up to you. In return, you'll get early access to the parts of the course as it's created, and the final version upon it’s completion. You will have access for 6 months after launch.</p>
 
                                     <p>If you pay less than $50 then you will get online access to each lesson. If you pay over $50 or more then you'll get access to the screencasts that go with each lesson.</p>
 
@@ -91,7 +90,7 @@ Template Name: 30-Day Rails
                                         <h5><strong><i class="fa fa-wrench"></i> If you pay from $1 to $49</strong></h5>                                
                                         <div class="small">
                                             <p><strong>Format:</strong> Online Course</p>
-                                            <p>Only want the course with no screencasts, pay any price, and you'll get the course as well as the source code, starting on your journey to understanding how to develop Rails apps.</p>                                    
+                                            <p>Only want the course (with no screencasts), pay any price, and you'll get the course as well as the source code, starting on your journey to understanding how to develop Rails apps. 6 months access</p>                                    
                                         </div>
                                     </div> 
                                 </div>
@@ -100,7 +99,7 @@ Template Name: 30-Day Rails
                                         <h5><strong><i class="fa fa-youtube-play"></i> If you pay over $50</strong></h5>
                                         <div class="small">                  
                                             <p><strong>Format:</strong> Online Course + Screencasts</p>
-                                            <p>You'll get the same "easy to follow but certainly not lacking the details" course, though you will be able to dive deeper into the topics covered, by watching these screencasts. Not to mention, the more you pay the more time I can dedicate to the community and to making this course that much more awesome.</p>
+                                            <p>You'll get the same "easy to follow but certainly not lacking the details" course, though you will be able to dive deeper into the topics covered, by watching these screencasts. Not to mention, the more you pay the more time I can dedicate to the community and to making this course that much more awesome. 6 months access</p>
                                         </div>
                                     </div> 
                                 </div>                                
