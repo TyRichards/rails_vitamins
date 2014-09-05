@@ -47,8 +47,12 @@ small, .small {
     line-height: 1.5!important;
 }
 
-.small p {
+.body-content .small p, .small p {
 margin-top: 17px;
+}
+
+.well hr {
+    margin: 25px 0;
 }
 
 .pagination-center {
@@ -289,7 +293,9 @@ body.page-template-page-railscurve-php {
     h1:first-child,
     h2:first-child,
     h3:first-child,
-    h4:first-child { margin-top: 0; }
+    h4:first-child,
+    h5:first-child,
+    h6:first-child { margin-top: 0; }
 }
 
 // Blog Article //////////////////////////////////////////////////////////////
