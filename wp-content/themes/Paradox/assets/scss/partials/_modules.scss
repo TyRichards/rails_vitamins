@@ -47,6 +47,10 @@ small, .small {
     line-height: 1.5!important;
 }
 
+.small p {
+margin-top: 17px;
+}
+
 .pagination-center {
     text-align: center;
     ul.pagination { padding-left: 0 }
@@ -595,8 +599,8 @@ h1, h2, h3, h4, h5, h6 {
 
 // Gravity Forms
 
-.gform_wrapper {
-    @extend .col-sm-8, .col-sm-offset-2;
+body .gform_wrapper {
+    // @extend .col-sm-8, .col-sm-offset-2;
     .gform_title { @extend .h2; margin-top: 0!important; }
     .gform_description { 
         @extend .small; 
@@ -605,7 +609,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     .gform_fields { 
         @extend .row; 
-        .gfield { @extend .col-sm-6 }
+        .gfield { margin-bottom: 10px; }
         .gf_full { @extend .col-sm-12 }
     }
     .gform_button { 
@@ -618,6 +622,16 @@ h1, h2, h3, h4, h5, h6 {
         display: none;
     }
     .gform_confirmation_wrapper { text-align: center; }
+
+    input[type=text], input[type=url], input[type=email], input[type=tel], input[type=number], input[type=password], input[type=password], select {
+        font-size: inherit;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .gform_footer {
+        padding-top: 0;
+        margin-top: 0;
+    }
 }   
 
 .validation_error {
