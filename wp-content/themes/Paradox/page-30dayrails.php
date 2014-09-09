@@ -62,7 +62,7 @@ Template Name: 30-Day Rails
         </div> -->
 
         <!-- Pre-Order -->
-        <div class="row">
+        <div class="row" id="pre-order">
             <div class="col-md-8">
                 <div class="well well-lg" >
                     <div class="clearfix">
